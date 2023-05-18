@@ -15,21 +15,12 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
       <script>
-        var hide = 1;
 
         $(document).ready(function(){
           $("#button1").click(function(){
-            if(hide == 1)
-            {
-            $("#hidden").slideDown("slow");
-            hide = 0;
-            }
-
-            else if(hide == 0)
-            {
-              $("button1").slideUp("slow");
-              hide = 1;
-            }
+            
+            $("#hidden").slideToggle("slow");
+           
           })
         });
         
