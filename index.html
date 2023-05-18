@@ -7,11 +7,29 @@
       h1{color:white;font-size:4vw;}
       th{color: black;}
       td{color: blueviolet;}
+      #hidden{display: none;}
+      #hidden{color: yellow; font-size: 3vw;}
     </style>
+
+      <!-- Jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+      <script>
+        $(document).ready(function(){
+          $("#button1").click(function(){
+            $("hidden").slideDown("slow");
+          })
+        });
+        
+  
+      </script>
+  
+
 
     <!-- JavaScript -->
     <script>function alertUser(){alert('Hello World!!!');}</script>
 
+  
     <title>Test subject 1</title>
 
   </head>
@@ -20,7 +38,11 @@
 
   <body>
     <h1>This is a test project</h1>
-    <button onclick="alertUser()">Click Me!!!</button>
+    <button id="button1" onclick="alertUser()">Click Me!!!</button>
+
+    <div id="hidden">
+      <p>This is a hidden message</p>
+    </div>
 
     <br><br>
     
