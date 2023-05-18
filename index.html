@@ -15,9 +15,21 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 
       <script>
+        var hide = 1;
+
         $(document).ready(function(){
           $("#button1").click(function(){
+            if(hide == 1)
+            {
             $("#hidden").slideDown("slow");
+            hide = 0;
+            }
+
+            else if(hide == 0)
+            {
+              $("button1").slideUp("slow");
+              hide = 1;
+            }
           })
         });
         
@@ -27,7 +39,19 @@
 
 
     <!-- JavaScript -->
-    <script>function alertUser(){alert('Hello World!!!');}</script>
+    <script>
+      var detect = 0;
+      
+    function alertUser()
+    {
+      if (detect == 0)
+        {alert('Hello World!!!'); detect = 1;}
+      else if(detect == 1)
+      {
+        alert('Hello again !!!'); detect = 0;
+      }
+    }
+    </script>
 
   
     <title>Test subject 1</title>
