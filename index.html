@@ -7,7 +7,7 @@
       h1{color:white;font-size:4vw;}
       th{color: black;}
       td{color: blueviolet;}
-      #hidden{display: none;}
+      
       #hidden{color: yellow; font-size: 3vw;}
     </style>
 
@@ -19,7 +19,9 @@
         $(document).ready(function(){
           $("#button1").click(function(){
             
-            $("#hidden").fadeToggle("slow");
+            var move = $("#hidden");
+            move.animate({left:'15%'},"slow");
+            move.animate({right:'15%'},"slow");
            
           })
         });
