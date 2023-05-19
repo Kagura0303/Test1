@@ -19,7 +19,7 @@
         $(document).ready(function(){
           $("#button1").click(function(){
             
-            var move = $("#hidden");
+            var move = $("#test");
             move.animate({left:'150px'},"slow");
             move.animate({right:'150px'},"slow");
            
@@ -58,7 +58,7 @@
     <button id="button1" onclick="alertUser()">Click Me!!!</button>
 
     <div id="hidden">
-      <p>This is a hidden message</p>
+      <p id="test">This is a hidden message</p>
     </div>
 
     <br><br>
